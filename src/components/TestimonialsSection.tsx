@@ -7,15 +7,6 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const testimonials = [
   {
-    id: 1,
-    name: "Maria Santos",
-    role: "Proprietária",
-    project: "Identidade Visual Completa",
-    text: "A BlarteseDesign transformou completamente a imagem da minha empresa. O resultado superou todas as expectativas!",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616c95a9aaa?w=150&h=150&fit=crop&crop=face"
-  },
-  {
     id: 2,
     name: "João Silva",
     role: "Gerente de Marketing",
@@ -224,7 +215,7 @@ export default function TestimonialsSection() {
             <div className="text-gray-600 text-sm">Avaliação Média</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-black text-[#C740D0] mb-2">98%</div>
+            <div className="text-3xl font-black text-[#C740D0] mb-2">100%</div>
             <div className="text-gray-600 text-sm">Recomendação</div>
           </div>
           <div className="text-center">

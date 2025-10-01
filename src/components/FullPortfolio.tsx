@@ -29,7 +29,6 @@ import {
   PaginationPrevious,
 } from "./ui/pagination";
 import PortfolioModal from "./PortfolioModal";
-import ShareModal from "./ShareModal";
 import projects from "../data/projects.js";
 
 interface PortfolioItem {
@@ -84,10 +83,6 @@ export default function FullPortfolio({
   const [selectedItem, setSelectedItem] =
     useState<PortfolioItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [shareItem, setShareItem] =
-    useState<PortfolioItem | null>(null);
-  const [isShareModalOpen, setIsShareModalOpen] =
-    useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(12); // 12 itens por página para um grid 3x4
@@ -102,17 +97,6 @@ export default function FullPortfolio({
     setSelectedItem(null);
   };
 
-  const handleShareClick = (item: PortfolioItem) => {
-    setShareItem(item);
-    setIsShareModalOpen(true);
-  };
-
-  const handleCloseShareModal = () => {
-    setIsShareModalOpen(false);
-    setShareItem(null);
-  };
-
-  // Filtrar itens baseado na categoria e pesquisa
   const filteredItems = allPortfolioItems.filter((item) => {
     const matchesCategory =
       selectedCategory === "Todos" ||
@@ -376,7 +360,6 @@ export default function FullPortfolio({
                                 className="bg-white text-black p-2.5 rounded-full hover:bg-gray-100 transition-colors"
                                 onClick={(e) => {
                                   e.stopPropagation();
-                                  handleShareClick(item);
                                 }}
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
@@ -551,13 +534,6 @@ export default function FullPortfolio({
           item={selectedItem}
           isOpen={isModalOpen}
           onClose={handleCloseModal}
-        />
-
-        {/* Modal de compartilhamento */}
-        <ShareModal
-          item={shareItem}
-          isOpen={isShareModalOpen}
-          onClose={handleCloseShareModal}
         />
       </div>
     </section>

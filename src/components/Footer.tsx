@@ -163,7 +163,7 @@ export default function Footer() {
               
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-pink-400 flex-shrink-0" />
-                <p className="text-gray-300">contato@blartesedesign.com</p>
+                <p className="text-gray-300">bl.arteedesign@gmail.com</p>
               </div>
               
               <div className="flex items-start gap-3">

@@ -27,7 +27,7 @@ export default function Header({ currentPage = 'home', onLogoClick, onNavigate, 
   const logoConfig = {
     // Descomente e adicione o caminho da sua logo:
     // logoUrl: '/path/to/your/logo.png', // ou use uma URL externa
-    logoUrl: null, // Mantenha como null para usar o design padrão
+    logoUrl: 'src/images/logo/Extenso-branco.svg', // Mantenha como null para usar o design padrão
     logoAlt: "BlarteseDesign Logo",
     showFallback: true, // Se true, mostra o design atual quando não há logo
   };
@@ -38,74 +38,14 @@ export default function Header({ currentPage = 'home', onLogoClick, onNavigate, 
       style={{ borderBottomColor: "rgba(4, 207, 188, 0.2)" }}
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between" style={{ width: 'auto' }} >
           {/* Logo */}
-          <motion.div
-            className="flex items-center space-x-3 cursor-pointer"
-            onClick={() => {
-              if (currentPage === 'portfolio' && onLogoClick) {
-                onLogoClick();
-              } else {
-                // Scroll to top on home page
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }
-            }}
-            whileHover={{ scale: 1.05 }}
-            transition={{
-              type: "spring",
-              stiffness: 400,
-              damping: 10,
-            }}
-          >
-            {logoConfig.logoUrl ? (
-              // Logo personalizada
-              <div className="flex items-center space-x-3">
-                <ImageWithFallback
-                  src={logoConfig.logoUrl}
-                  alt={logoConfig.logoAlt}
-                  className="h-10 w-auto max-w-[200px] object-contain"
-                />
-                {/* Opcional: manter o texto junto com a logo */}
-                <span className="text-white font-bold text-xl tracking-tight hidden sm:block">
-                  Blartese
-                  <span className="text-yellow-400">
-                    Design
-                  </span>
-                </span>
-              </div>
-            ) : logoConfig.showFallback ? (
-              // Design padrão (fallback)
-              <>
-                <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
-                  style={{ backgroundColor: "#0267DE" }}
-                >
-                  <span className="text-white font-black text-xl">
-                    B
-                  </span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-white font-bold text-xl tracking-tight leading-tight">
-                    Blartese
-                    <span style={{ color: "#04CFBC" }}>
-                      Design
-                    </span>
-                  </span>
-                  <span
-                    className="text-xs tracking-wider"
-                    style={{ color: "#04CFBC", opacity: 0.8 }}
-                  >
-                    GRÁFICA PREMIUM
-                  </span>
-                </div>
-              </>
-            ) : (
-              // Apenas texto se não houver logo nem fallback
-              <span className="text-white font-bold text-xl tracking-tight">
-                Blartese
-                <span className="text-yellow-400">Design</span>
-              </span>
-            )}
+          <motion.div className="flex items-center space-x-3 cursor-pointer">
+            <img
+              src={logoConfig.logoUrl}
+              alt="Blartese Design"
+              style={{ width: '150px' }} 
+            />
           </motion.div>
 
           {/* Desktop Menu */}

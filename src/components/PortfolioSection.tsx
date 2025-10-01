@@ -7,7 +7,6 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 import { Eye, ExternalLink } from "lucide-react";
 import PortfolioModal from "./PortfolioModal";
-import ShareModal from "./ShareModal";
 import projects from '../data/projects.js';
 import { type ProjectItem } from "../utils/projectLoader";
 
@@ -40,8 +39,6 @@ export default function PortfolioSection({ onShowMore, limitItems }: PortfolioSe
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   const [selectedItem, setSelectedItem] = useState<ProjectItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [shareItem, setShareItem] = useState<ProjectItem | null>(null);
-  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   const handleItemClick = (item: ProjectItem) => {
     setSelectedItem(item);
@@ -51,16 +48,6 @@ export default function PortfolioSection({ onShowMore, limitItems }: PortfolioSe
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setSelectedItem(null);
-  };
-
-  const handleShareClick = (item: ProjectItem) => {
-    setShareItem(item);
-    setIsShareModalOpen(true);
-  };
-
-  const handleCloseShareModal = () => {
-    setIsShareModalOpen(false);
-    setShareItem(null);
   };
 
   const filteredItems =
@@ -203,17 +190,6 @@ export default function PortfolioSection({ onShowMore, limitItems }: PortfolioSe
                           >
                             <Eye className="w-4 h-4" />
                           </motion.button>
-                          <motion.button
-                            className="bg-white text-black p-2.5 rounded-full hover:bg-gray-100 transition-colors"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleShareClick(item);
-                            }}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                          >
-                            <ExternalLink className="w-4 h-4" />
-                          </motion.button>
                         </div>
                       </motion.div>
                     </div>
@@ -303,13 +279,6 @@ export default function PortfolioSection({ onShowMore, limitItems }: PortfolioSe
           item={selectedItem}
           isOpen={isModalOpen}
           onClose={handleCloseModal}
-        />
-
-        {/* Modal de compartilhamento */}
-        <ShareModal 
-          item={shareItem}
-          isOpen={isShareModalOpen}
-          onClose={handleCloseShareModal}
         />
       </div>
     </section>

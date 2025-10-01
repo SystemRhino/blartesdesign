@@ -84,13 +84,13 @@ export default function CTASection({ onRequestQuote }: CTASectionProps) {
               onClick={() => {
                 const subject = encodeURIComponent("Solicitação de Orçamento - BlarteseDesign");
                 const body = encodeURIComponent("Olá,\n\nGostaria de solicitar um orçamento para meu projeto.\n\nDetalhes do projeto:\n- Tipo de serviço: \n- Dimensões: \n- Prazo: \n- Outras informações: \n\nAguardo retorno!\n\nObrigado(a).");
-                window.open(`mailto:contato@blartesedesign.com?subject=${subject}&body=${body}`, "_self");
+                window.open(`mailto:bl.arteedesign@gmail.com?subject=${subject}&body=${body}`, "_self");
               }}
             >
               <Mail className="w-12 h-12 text-white mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-bold text-white mb-2">E-mail</h3>
               <p className="text-white/70 text-sm mb-3">Orçamentos detalhados</p>
-              <span className="text-white font-semibold">contato@blartesedesign.com</span>
+              <span className="text-white font-semibold">bl.arteedesign@gmail.com</span>
             </motion.div>
           </motion.div>
 
@@ -106,7 +106,7 @@ export default function CTASection({ onRequestQuote }: CTASectionProps) {
                 className="bg-black text-yellow-400 hover:bg-gray-900 font-bold px-8 py-4 rounded-full text-lg group shadow-lg"
                 size="lg"
                 onClick={() => {
-                  const whatsappUrl = "https://wa.me/5511999999999?text=" + encodeURIComponent("Olá! Gostaria de solicitar um orçamento para meu projeto. 😊");
+                  const whatsappUrl = "https://wa.me/5511939340489?text=" + encodeURIComponent("Olá! Gostaria de solicitar um orçamento para meu projeto. 😊");
                   window.open(whatsappUrl, "_blank");
                 }}
               >

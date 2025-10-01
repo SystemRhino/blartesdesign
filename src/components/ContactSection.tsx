@@ -123,8 +123,7 @@ _Mensagem enviada através do site da BlarteseDesign_`;
     {
       icon: Mail,
       title: "E-mail",
-      info: "contato@blartesedesign.com",
-      secondary: "orcamento@blartesedesign.com",
+      info: "bl.arteedesign@gmail.com",
       color: "text-purple-500",
     },
     {
