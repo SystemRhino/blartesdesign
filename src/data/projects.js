@@ -141,129 +141,130 @@ const projects = [
   {
     id: 1,
     name: "Caminhonete Personalizada",
-    tags: ["Identidade", "Vinil", "Veículos"],
-    images: [caminhonete1, caminhonete2, caminhonete3, caminhonete4, caminhonete5, caminhonete6, caminhonete7, caminhonete8, caminhonete9, caminhonete10, caminhonete11] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Automotivo", "Design Exclusivo"],
+    images: [caminhonete1, caminhonete2, caminhonete3, caminhonete4, caminhonete5, caminhonete6, caminhonete7, caminhonete8, caminhonete9, caminhonete10, caminhonete11]
   },
   {
     id: 2,
     name: "Envelopamento de Caminhão",
-    tags: ["Identidade", "Vinil", "Veículos"],
-    images: [envelopamentoCaminhao1, envelopamentoCaminhao2, envelopamentoCaminhao3, envelopamentoCaminhao4] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Transporte", "Publicidade"],
+    images: [envelopamentoCaminhao1, envelopamentoCaminhao2, envelopamentoCaminhao3, envelopamentoCaminhao4]
   },
   {
     id: 3,
     name: "Van Escolar Envelopada",
-    tags: ["Identidade", "Vinil", "Veículos"],
-    images: [vanEscolar1, vanEscolar2, vanEscolar3, vanEscolar4, vanEscolar6] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Automotivo", "Transporte Escolar"],
+    images: [vanEscolar1, vanEscolar2, vanEscolar3, vanEscolar4, vanEscolar6]
   },
   {
     id: 4,
     name: "Sorveteria Envelopada",
-    tags: ["Identidade", "Vinil", "Veículos"],
-    images: [sorveteria1, sorveteria2, sorveteria3, sorveteria4] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Comercial", "Identidade Visual"],
+    images: [sorveteria1, sorveteria2, sorveteria3, sorveteria4]
   },
   {
     id: 5,
     name: "Sala Infantil Decorada",
-    tags: ["Adesivo", "Papel de Parede", "Infantil"],
-    images: [salaInfantil1, salaInfantil2, salaInfantil3] // MÚLTIPLAS IMAGENS
+    tags: ["Decoração", "Infantil", "Papel de Parede"],
+    images: [salaInfantil1, salaInfantil2, salaInfantil3]
   },
   {
     id: 6,
     name: "Quiosque com Faixada Personalizada",
-    tags: ["LED", "Acrílico", "Fachada"],
-    images: [quiosque1, quiosque2, quiosque3, quiosque4] // MÚLTIPLAS IMAGENS
+    tags: ["Fachada", "Comercial", "Iluminação LED"],
+    images: [quiosque1, quiosque2, quiosque3, quiosque4]
   },
   {
     id: 7,
     name: "Prateleira Envelopada",
-    tags: ["Adesivo", "Vinil", "Móveis"],
-    images: [prateleira1, prateleira2, prateleira3, prateleira4, prateleira5, prateleira6, prateleira7] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Móveis", "Decoração"],
+    images: [prateleira1, prateleira2, prateleira3, prateleira4, prateleira5, prateleira6, prateleira7]
   },
   {
     id: 8,
     name: "Placas de Sinalização e Movimentação",
-    tags: ["Adesivo", "Sinalização", "Comercial"],
-    images: [placas, placas2, placas3] // MÚLTIPLAS IMAGENS
+    tags: ["Sinalização", "Comercial", "Orientação"],
+    images: [placas, placas2, placas3]
   },
   {
     id: 9,
     name: "Caminhonete Envelopada",
-    tags: ["Adesivo", "Vinil", "Veículos"],
-    images: [caminhoneteB1, caminhoneteB2, caminhoneteB3, caminhoneteB4] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Automotivo", "Estilo"],
+    images: [caminhoneteB1, caminhoneteB2, caminhoneteB3, caminhoneteB4]
   },
   {
     id: 10,
     name: "Escadaria Decorada",
-    tags: ["Adesivo", "Vinil", "Comercial"],
-    images: [escadas1, escadas2, escadas3] // MÚLTIPLAS IMAGENS
+    tags: ["Decoração", "Ambiente", "Adesivo Decorativo"],
+    images: [escadas1, escadas2, escadas3]
   },
   { 
     id: 11,
     name: "Envelopamento de Carro",
-    tags: ["Adesivo", "Vinil", "Veículos"],
-    images: [carroE1, carroE2, carroE3, carroE4, carroE5, carroE6, carroE7, carroE8, carroE9] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Automotivo", "Customização"],
+    images: [carroE1, carroE2, carroE3, carroE4, carroE5, carroE6, carroE7, carroE8, carroE9]
   },
   { 
     id: 12,
     name: "Envelopamento de Saveiro",
-    tags: ["Adesivo", "Vinil", "Veículos"],
-    images: [saveiroA1, saveiroA2, saveiroA3, saveiroA4, saveiroA5] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Automotivo", "Esportivo"],
+    images: [saveiroA1, saveiroA2, saveiroA3, saveiroA4, saveiroA5]
   },
   {
     id: 13,
     name: "Decoração Mesa Mar",
-    tags: ["Adesivo", "Vinil", "Comercial"],
-    images: [decoracao2, decoracao1] // MÚLTIPLAS IMAGENS
+    tags: ["Decoração", "Eventos", "Temático"],
+    images: [decoracao2, decoracao1]
   },
   {
     id: 14,
     name: "Envelopamento de Geladeira",
-    tags: ["Adesivo", "Vinil", "Comercial"],
-    images: [geladeira2, geladeira1] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Eletrodomésticos", "Decoração"],
+    images: [geladeira2, geladeira1]
   },
   {
     id: 15,
     name: "Latão Envelopado",
-    tags: ["Adesivo", "Vinil", "Comercial"],
-    images: [latao1, latao2] // MÚLTIPLAS IMAGENS
+    tags: ["Envelopamento", "Comercial", "Personalização"],
+    images: [latao1, latao2]
   },
   {
     id: 16,
     name: "Letreiro de Empresa",
-    tags: ["LED", "Acrílico", "Fachada"],
-    images: [letreiroE1, letreiroE2, letreiroE3, letreiroE4, letreiroE5] // MÚLTIPLAS IMAGENS
+    tags: ["Fachada", "LED", "Identidade Corporativa"],
+    images: [letreiroE1, letreiroE2, letreiroE3, letreiroE4, letreiroE5]
   },
   {
     id: 17,
     name: "Letreiro de Loja",
-    tags: ["LED", "Acrílico", "Fachada"],
-    images: [loja1, loja2, loja3] // MÚLTIPLAS IMAGENS
+    tags: ["Fachada", "LED", "Comercial"],
+    images: [loja1, loja2, loja3]
   },
   {
     id: 18,
     name: "Faixa de Loja",
-    tags: ["Adesivo", "Vinil", "Comercial"],
-    images: [faixaLoja1] // IMAGEM ÚNICA
+    tags: ["Publicidade", "Vinil", "Comercial"],
+    images: [faixaLoja1]
   },
   {
     id: 19,
     name: "Letreiro Loja",
-    tags: ["LED", "Acrílico", "Fachada"],
-    images: [lojaA2, lojaA1, lojaA3] // MÚLTIPLAS IMAGENS
+    tags: ["Fachada", "LED", "Comercial"],
+    images: [lojaA2, lojaA1, lojaA3]
   },
   {
     id: 20,
     name: "Porta Decorada",
-    tags: ["Adesivo", "Vinil", "Comercial"],
-    images: [porta, porta2] // MÚLTIPLAS IMAGENS
+    tags: ["Decoração", "Ambiente", "Adesivo Decorativo"],
+    images: [porta, porta2 /* corrigir: porta_decorada não existe */]
   },
   {
     id: 21,
     name: "Letreiro",
-    tags: ["LED", "Acrílico", "Fachada"],
-    images: [letreiroA1, letreiroA3] // MÚLTIPLAS IMAGENS
+    tags: ["Fachada", "LED", "Identidade Visual"],
+    images: [letreiroA1, letreiroA3]
   },
 ];
+
 
 export default projects;
