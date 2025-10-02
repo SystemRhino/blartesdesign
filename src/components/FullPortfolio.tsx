@@ -7,7 +7,6 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 import {
   Eye,
-  ExternalLink,
   ArrowLeft,
   Search,
 } from "lucide-react";
@@ -162,6 +161,10 @@ export default function FullPortfolio({
 
   return (
     <section className="min-h-screen bg-black py-8">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="container mx-auto px-4">
         {/* Header com botão de voltar e título */}
         <motion.div
@@ -355,16 +358,6 @@ export default function FullPortfolio({
                                 whileTap={{ scale: 0.9 }}
                               >
                                 <Eye className="w-4 h-4" />
-                              </motion.button>
-                              <motion.button
-                                className="bg-white text-black p-2.5 rounded-full hover:bg-gray-100 transition-colors"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                }}
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.9 }}
-                              >
-                                <ExternalLink className="w-4 h-4" />
                               </motion.button>
                             </div>
                           </motion.div>

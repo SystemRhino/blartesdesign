@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Card } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
-import { Eye, ExternalLink } from "lucide-react";
+import { Eye } from "lucide-react";
 import PortfolioModal from "./PortfolioModal";
 import projects from '../data/projects.js';
 import { type ProjectItem } from "../utils/projectLoader";

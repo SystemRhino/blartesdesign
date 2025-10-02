@@ -2,15 +2,13 @@
 
 import { motion } from 'motion/react';
 import { 
-  Facebook, 
   Instagram, 
-  Linkedin, 
-  Youtube, 
   MapPin, 
   Phone, 
   Mail,
   Clock,
-  ArrowUp
+  ArrowUp,
+  AlignJustify
 } from 'lucide-react';
 import { Button } from './ui/button';
 
@@ -21,7 +19,6 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/blartesedesign/', label: 'Instagram', color: 'hover:text-pink-400' },
-    { icon: Facebook, href: '#', label: 'Facebook', color: 'hover:text-blue-400' }
     /*{ icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-600' },
     { icon: Youtube, href: '#', label: 'YouTube', color: 'hover:text-red-500' } */
   ];
@@ -60,16 +57,12 @@ export default function Footer() {
             className="lg:col-span-1"
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-pink-400 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-black font-black text-xl">B</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-white font-bold text-2xl tracking-tight leading-tight">
-                  Blartese<span className="text-pink-400">Design</span>
-                </span>
-                <span className="text-pink-400/70 text-xs tracking-wider">
-                  GRÁFICA PREMIUM
-                </span>
+              <div className="flex flex-col items-center">
+                <img
+                  src="src/images/logo/Simbolo-branco.svg"
+                  alt="Blartese Design"
+                  style={{ width: '30%' }} 
+                />
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
@@ -148,7 +141,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Rua das Artes Gráficas, 123</p>
+                  <p className="text-gray-300">R. Patativa, 271, Cotia</p>
                   <p className="text-gray-400 text-sm">São Paulo - SP, 01234-567</p>
                 </div>
               </div>
@@ -202,15 +195,6 @@ export default function Footer() {
               viewport={{ once: true }}
               className="flex items-center gap-6"
             >
-              <div className="hidden md:flex gap-6 text-sm">
-                <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Política de Privacidade
-                </a>
-                <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Termos de Uso
-                </a>
-              </div>
-
               <Button
                 onClick={scrollToTop}
                 className="bg-pink-400 text-black hover:bg-pink-500 rounded-full w-12 h-12 p-0 group"
