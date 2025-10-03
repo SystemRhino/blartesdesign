@@ -15,6 +15,11 @@ export default function HeroSection({ onViewPortfolio }: HeroSectionProps) {
       id="inicio"
       className="relative min-h-screen bg-black overflow-hidden"
     >
+      <br />
+      <br />
+      <br />
+
+
       {/* Background Video/Image */}
       <div className="absolute inset-0">
         <ImageWithFallback

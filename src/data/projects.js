@@ -155,7 +155,7 @@ const projects = [
   { id: 8,  name: "Fachada Decorada", tags: ["Decoração", "Ambiente", "Adesivo Decorativo"], images: [fachadaAcqua, outdoorAcqua, fachadaDoce] },
   { id: 22, name: "Letreiro Decorado", tags: ["Decoração", "Eventos", "Temático"], images: [aguasLetreiro] },
   { id: 9,  name: "Escadaria Decorada", tags: ["Decoração", "Ambiente", "Adesivo Decorativo"], images: [escadas1, escadas2, escadas3] },
-  { id: 23, name: "Placas Decoradas de Movimentação", tags: ["Sinalização", "Comercial", "Orientação"], images: [placaTherma, placaThermaA, placaThermaC] },
+  { id: 23, name: "Placas Decoradas de Movimentação", tags: ["Sinalização", "Comercial", "Orientação"], images: [placaThermaA, placaTherma, placaThermaC] },
   { id: 10, name: "Envelopamento de Carro", tags: ["Envelopamento", "Automotivo", "Customização"], images: [carroE1, carroE2, carroE3, carroE4, carroE5, carroE6, carroE7, carroE8, carroE9] },
   { id: 11, name: "Placas de Sinalização e Movimentação", tags: ["Sinalização", "Comercial", "Orientação"], images: [placas1, placas2, placas3] },
   { id: 12, name: "Envelopamento de Saveiro", tags: ["Envelopamento", "Automotivo", "Esportivo"], images: [saveiroA1, saveiroA2, saveiroA3, saveiroA4, saveiroA5] },
