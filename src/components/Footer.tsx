@@ -11,6 +11,7 @@ import {
   AlignJustify
 } from 'lucide-react';
 import { Button } from './ui/button';
+import logoUrl from '../images/logo/Simbolo-branco.png';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -59,7 +60,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3 mb-6">
               <div className="flex flex-col items-center">
                 <img
-                  src="src/images/logo/Simbolo-branco.svg"
+                  src={logoUrl} 
                   alt="Blartese Design"
                   style={{ width: '30%' }} 
                 />
@@ -141,8 +142,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">R. Patativa, 271, Cotia</p>
-                  <p className="text-gray-400 text-sm">São Paulo - SP, 01234-567</p>
+                  <p className="text-gray-300">Estr. Padre Inácio, 2013</p>
+                  <p className="text-gray-400 text-sm">Cotia - SP, 06719-050</p>
                 </div>
               </div>
               

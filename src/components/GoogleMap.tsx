@@ -13,11 +13,10 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   
   // Endereço real do negócio
-  const businessAddress = "R. Patativa, 271, Cotia - São Paulo, 06700-287";
-  const businessName = "BlarteseDesign";
+  const businessAddress = "Estr. Padre Inácio, 2013 - Jardim Sao Miguel, Cotia - SP, 06719-050";
   
   // URL do Google Maps para embed (Cotia - SP)
-  const googleMapsEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.853!2d-46.919123!3d-23.564289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce011c58553b41%3A0x9ba94c6b5447e4d1!2sR.%20Patativa%2C%20271%2C%20Cotia%20-%20SP%2C%2006700-287!5e0!3m2!1spt-BR!2sbr!4v1643393770776!5m2!1spt-BR!2sbr`;
+  const googleMapsEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2898294201973!2d-46.93605202338506!3d-23.629789378752935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa9c85f25f827%3A0x75ab299dc0785e4!2sEstr.%20Padre%20In%C3%A1cio%2C%202013%20-%20Jardim%20Sao%20Miguel%2C%20Cotia%20-%20SP%2C%2006719-050!5e0!3m2!1spt-BR!2sbr!4v1759452522020!5m2!1spt-BR!2sbr`;
   
   // URL para abrir no Google Maps
   const googleMapsUrl = `https://www.google.com/maps/search/${encodeURIComponent(businessAddress)}`;
@@ -142,8 +141,8 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
           <div>
             <h4 className="font-semibold text-white mb-2">Endereço</h4>
             <p className="text-gray-300 text-sm leading-relaxed">
-              R. Patativa, 271, Cotia<br />
-              São Paulo, 06700-287
+              Estr. Padre Inácio, 2013, Cotia <br /> 
+              São Paulo, 06719-050
             </p>
           </div>
 
@@ -159,7 +158,6 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
               <h5 className="font-semibold text-white mb-1">Contato</h5>
               <p className="text-gray-400">
                 (11) 93934-0489<br />
-                (11) 93934-0489
               </p>
             </div>
           </div>
@@ -182,7 +180,7 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
             </Button>
             <Button
               variant="outline"
-              className="flex-1 border-[#04CFBC] text-[#04CFBC] hover:bg-[#04CFBC] hover:text-black font-semibold"
+              className="flex-1 hover:border-[#04CFBC] hover:text-[#04CFBC] bg-[#04CFBC] text-black font-semibold"
               onClick={openInGoogleMaps}
             >
               <ExternalLink className="mr-2 w-4 h-4" />

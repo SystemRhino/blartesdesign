@@ -109,8 +109,8 @@ _Mensagem enviada através do site da BlarteseDesign_`;
     {
       icon: MapPin,
       title: "Endereço",
-      info: "R. Patativa, 271, Cotia",
-      secondary: "Sao Paulo, 06700-287",
+      info: "Estr. Padre Inácio, 2013 - Cotia",
+      secondary: "Sao Paulo, 06719-050",
       color: "text-blue-500",
     },
     {

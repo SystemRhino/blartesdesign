@@ -4,8 +4,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-
+import logoExtensa from '../images/logo/Extenso-branco.png';
 interface HeaderProps {
   currentPage?: 'home' | 'portfolio';
   onLogoClick?: () => void;
@@ -27,7 +26,7 @@ export default function Header({ currentPage = 'home', onLogoClick, onNavigate, 
   const logoConfig = {
     // Descomente e adicione o caminho da sua logo:
     // logoUrl: '/path/to/your/logo.png', // ou use uma URL externa
-    logoUrl: 'src/images/logo/Extenso-branco.svg', // Mantenha como null para usar o design padrão
+    logoUrl: logoExtensa, // Mantenha como null para usar o design padrão
     logoAlt: "BlarteseDesign Logo",
     showFallback: true, // Se true, mostra o design atual quando não há logo
   };
