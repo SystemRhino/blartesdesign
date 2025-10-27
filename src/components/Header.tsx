@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
-import logoExtensa from '../images/logo/Extenso-branco.png';
+import logoExtensa from '../images/logo/logo.svg';
 interface HeaderProps {
   currentPage?: 'home' | 'portfolio';
   onLogoClick?: () => void;
@@ -43,7 +43,7 @@ export default function Header({ currentPage = 'home', onLogoClick, onNavigate, 
             <img
               src={logoConfig.logoUrl}
               alt="Blartese Design"
-              style={{ width: '150px' }} 
+              style={{ width: '85px' }} 
             />
           </motion.div>
 

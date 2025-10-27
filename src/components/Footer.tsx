@@ -11,7 +11,6 @@ import {
   AlignJustify
 } from 'lucide-react';
 import { Button } from './ui/button';
-import logoUrl from '../images/logo/Simbolo-branco.png';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -49,44 +48,6 @@ export default function Footer() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Footer Content */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="lg:col-span-1"
-          >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="flex flex-col items-center">
-                <img
-                  src={logoUrl} 
-                  alt="Blartese Design"
-                  style={{ width: '30%' }} 
-                />
-              </div>
-            </div>
-            <p className="text-gray-400 leading-relaxed mb-6">
-              Especialistas em comunicação visual com mais de 5 anos transformando 
-              ideias em materiais gráficos de impacto.
-            </p>
-            
-            {/* Social Links */}
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  className={`w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 ${social.color} hover:scale-110`}
-                  whileHover={{ y: -3 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <social.icon className="w-5 h-5" />
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -167,6 +128,31 @@ export default function Footer() {
                   <p className="text-gray-400 text-sm">Sábado: 8h às 12h</p>
                 </div>
               </div>
+            </div>
+          </motion.div>
+
+          {/* Company Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="lg:col-span-1"
+          >
+            
+            {/* Social Links */}
+            <div className="flex gap-4">
+              {socialLinks.map((social) => (
+                <motion.a
+                  key={social.label}
+                  href={social.href}
+                  className={`w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 ${social.color} hover:scale-110`}
+                  whileHover={{ y: -3 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <social.icon className="w-5 h-5" />
+                </motion.a>
+              ))}
             </div>
           </motion.div>
         </div>
