@@ -4,7 +4,7 @@
 // - O ProjectCard.jsx usa images[0] como thumbnail
 // - O PortfolioModal.tsx cria um carrossel com todas as imagens do array
 // - Para projetos com 1 imagem use: images: [imagemUnica]
-// - Para projetos com várias imagens use: images: [img1, img2, img3...]
+// - Para projetos com várias imagens use: images: [img1, img2, img3..]
 
 // ------------------------- IMPORTS -------------------------
 
@@ -64,6 +64,8 @@ import prateleira7 from "../images/projects/prateleira7.jpg";
 import placas1 from "../images/projects/placas1.jpg";
 import placas2 from "../images/projects/placas2.jpg";
 import placas3 from "../images/projects/placas3.jpg";
+import placas4 from "../images/projects/thermas_mapa.jpeg";
+import placas5 from "../images/projects/thermas_mapa2.jpeg";
 
 // Caminhonete (variação B)
 import caminhoneteB1 from "../images/projects/caminhoneteB1.jpg";
@@ -142,6 +144,32 @@ import placaThermaC from '../images/projects/placaC.jpg';
 // Vila das Águas
 import aguasLetreiro from '../images/projects/letreiroA.jpg';
 
+// Banner evento
+import bannerEvento from '../images/projects/banner.jpeg';
+
+// Cardapio la casa de papel
+import cardapio from '../images/projects/cardapioA.jpeg';
+
+// Container thermas
+import container from '../images/projects/containerA.jpeg';
+ 
+// fachada hamburgueria
+import fachada_hamburguer from '../images/projects/fachadaB2.jpeg';
+import fachada_hamburguer2 from '../images/projects/fachadaC.jpeg';
+
+// fachada loja
+import fachada from '../images/projects/fachadaA.jpeg';
+
+// bar stop fachada
+import bar_fachada from '../images/projects/fachadaB.jpeg';
+
+// bar stop placa
+import bar_placa from '../images/projects/placaA.jpeg';
+
+// envelopamento carro thermas
+import thermas_carro from '../images/projects/thermas_carro.jpeg';
+
+
 // ------------------------- PROJECTS -------------------------
 
 const projects = [
@@ -150,6 +178,7 @@ const projects = [
   { id: 3,  name: "Sala Infantil Decorada", tags: ["Decoração", "Infantil", "Papel de Parede"], images: [salaInfantil1, salaInfantil2, salaInfantil3] },
   { id: 4,  name: "Van Escolar Envelopada", tags: ["Envelopamento", "Automotivo", "Transporte Escolar"], images: [vanEscolar1, vanEscolar2, vanEscolar3, vanEscolar4, vanEscolar6] },
   { id: 5,  name: "Quiosque com Fachada Personalizada", tags: ["Fachada", "Comercial", "Iluminação LED"], images: [quiosque1, quiosque2, quiosque3, quiosque4] },
+  { id: 28, name: "Fachada Hamburgueria", tags: ["Fachada", "Comercial", "Restaurante"], images: [fachada_hamburguer, fachada_hamburguer2] },
   { id: 6,  name: "Sorveteria Envelopada", tags: ["Envelopamento", "Comercial", "Identidade Visual"], images: [sorveteria1, sorveteria2, sorveteria3, sorveteria4] },
   { id: 7,  name: "Prateleira Envelopada", tags: ["Envelopamento", "Móveis", "Decoração"], images: [prateleira1, prateleira2, prateleira3, prateleira4, prateleira5, prateleira6, prateleira7] },
   { id: 8,  name: "Fachada Decorada", tags: ["Decoração", "Ambiente", "Adesivo Decorativo"], images: [fachadaAcqua, outdoorAcqua, fachadaDoce] },
@@ -157,7 +186,7 @@ const projects = [
   { id: 9,  name: "Escadaria Decorada", tags: ["Decoração", "Ambiente", "Adesivo Decorativo"], images: [escadas1, escadas2, escadas3] },
   { id: 23, name: "Placas Decoradas de Movimentação", tags: ["Sinalização", "Comercial", "Orientação"], images: [placaThermaA, placaTherma, placaThermaC] },
   { id: 10, name: "Envelopamento de Carro", tags: ["Envelopamento", "Automotivo", "Customização"], images: [carroE1, carroE2, carroE3, carroE4, carroE5, carroE6, carroE7, carroE8, carroE9] },
-  { id: 11, name: "Placas de Sinalização e Movimentação", tags: ["Sinalização", "Comercial", "Orientação"], images: [placas1, placas2, placas3] },
+  { id: 11, name: "Placas de Sinalização e Movimentação", tags: ["Sinalização", "Comercial", "Orientação"], images: [placas1, placas2, placas3, placas4, placas5] },
   { id: 12, name: "Envelopamento de Saveiro", tags: ["Envelopamento", "Automotivo", "Esportivo"], images: [saveiroA1, saveiroA2, saveiroA3, saveiroA4, saveiroA5] },
   { id: 13, name: "Porta Decorada", tags: ["Decoração", "Ambiente", "Adesivo Decorativo"], images: [porta1, porta2] },
   { id: 14, name: "Letreiro de Empresa", tags: ["Fachada", "LED", "Identidade Corporativa"], images: [letreiroE1, letreiroE2, letreiroE3, letreiroE4, letreiroE5] },
@@ -168,7 +197,14 @@ const projects = [
   { id: 19, name: "Letreiro de Loja", tags: ["Fachada", "LED", "Comercial"], images: [loja1, loja2, loja3] },
   { id: 20, name: "Faixa de Loja", tags: ["Publicidade", "Vinil", "Comercial"], images: [faixaLoja1] },
   { id: 21, name: "Letreiro Loja", tags: ["Fachada", "LED", "Comercial"], images: [lojaA1, lojaA2, lojaA3] },
-  { id: 24, name: "Letreiro", tags: ["Fachada", "LED", "Identidade Visual"], images: [letreiroA1, letreiroA3] }
+  { id: 24, name: "Letreiro", tags: ["Fachada", "LED", "Identidade Visual"], images: [letreiroA1, letreiroA3] },
+  { id: 25, name: "Banner de Evento", tags: ["Publicidade", "Evento", "Design Gráfico"], images: [bannerEvento] },
+  { id: 26, name: "Cardápio personalizado", tags: ["Design", "Cardápio", "Restaurante"], images: [cardapio] },
+  { id: 27, name: "Container Thermas", tags: ["Fachada", "Comercial", "Container"], images: [container] },
+  { id: 29, name: "Fachada de Loja", tags: ["Fachada", "Comercial", "Identidade Visual"], images: [fachada] },
+  { id: 30, name: "Fachada Bar Stop", tags: ["Fachada", "Bar", "Comercial"], images: [bar_fachada] },
+  { id: 31, name: "Placa Bar Stop", tags: ["Placa", "Publicidade", "Bar"], images: [bar_placa] },
+  { id: 32, name: "Carro envelopado", tags: ["Envelopamento", "Automotivo", "Publicidade"], images: [thermas_carro] },
 ];
 
 export default projects;
